@@ -37,6 +37,9 @@
             "VersionFormat": "major.minor.patch",
             "ComposeFilePath": "./compose.yaml",
             "ComposeCommand": "docker compose"
+        },
+        "PackageSettings": {
+            "OutputDirectory": "./packages"
         }
     }
 }

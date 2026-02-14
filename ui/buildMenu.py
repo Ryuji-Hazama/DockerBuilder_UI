@@ -7,6 +7,7 @@ import os
 import PIL._tkinter_finder
 
 from statics import *
+from core import BuildUp
 
 class buildMenu:
 
@@ -16,13 +17,15 @@ class buildMenu:
         self.logger = maplex.Logger(__name__)
         self.logger.info("Initializing Build Menu.")
 
-        self.root = root
-
         # Load configuration
 
         self.configFile = maplex.MapleJson("config.json")
         self.config = self.configFile.read("ApplicationSettings")
         self.imageList = self.config.get("Images", [])
+
+        self.root = root
+        self.buildInstance = None
+        self.options = {}
 
         self.logger.info("Build Menu initialized successfully.")
 
@@ -62,25 +65,11 @@ class buildMenu:
             imageVarDict[KEY_VERSION] = versionDict
             self.variableDictionary[imageName] = imageVarDict
 
-    def configureStyles(self):
-
-        style = ttk.Style()
-        style.configure(
-            "Secondary.TCheckbutton",
-            background=style.colors.secondary,
-            foreground=style.colors.get_foreground("secondary")
-        )
-        style.map(
-            "Secondary.TCheckbutton",
-            background=[("active", style.colors.secondary), ("selected", style.colors.secondary)],
-            foreground=[("disabled", style.colors.border)]
-        )
-
     def generateUI(self):
 
         self.logger.debug("Generating UI elements.")
 
-        # Generate UI elements here
+        # Generate UI elements for build menu
 
         self.generateMasterToggles()
         self.generateImageCheckbuttons()
@@ -233,14 +222,50 @@ class buildMenu:
         build_button = ttk.Button(button_frame, text="Build", command=self.onBuildClick)
         build_button.grid(row=0, column=0, padx=10)
 
+    def getBuildInstance(self):
+
+        self.buildInstance = BuildUp(self.options, self.root)
+
+    def gatherOptions(self):
+
+        self.logger.debug("Gathering options from UI.")
+
+        # Gather options for each image
+
+        imageOptions = {}
+
+        for imageName, imageVarDict in self.variableDictionary.items():
+
+            buildOption = imageVarDict[KEY_BUILD][KEY_VALUE].get()
+            deleteOption = imageVarDict[KEY_DELETE][KEY_VALUE].get()
+            releaseOption = imageVarDict[KEY_RELEASE][KEY_VALUE].get()
+            packVolumesOption = imageVarDict[KEY_PACK_VOLUMES][KEY_VALUE].get() if imageVarDict[KEY_PACK_VOLUMES][KEY_REF] is not None else False
+            versionOption = imageVarDict[KEY_VERSION][KEY_VALUE].get()
+
+            imageOptions[imageName] = {
+                KEY_BUILD: buildOption,
+                KEY_DELETE: deleteOption,
+                KEY_RELEASE: releaseOption,
+                KEY_PACK_VOLUMES: packVolumesOption,
+                KEY_VERSION: versionOption
+            }
+
+        self.options[KEY_OP_IMAGES] = imageOptions
+        self.options[KEY_OP_COMMON] = {
+            KEY_COM_BUILD_ALL: self.commonOptions[KEY_COM_BUILD_ALL][KEY_VALUE].get()
+        }
+
+        self.buildAllSelected = self.options[KEY_OP_COMMON][KEY_COM_BUILD_ALL]
+
     def onBuildClick(self):
 
-        pass  # Implement build logic here
+        self.gatherOptions()
+        self.getBuildInstance()
+        self.buildInstance.startBuild()
 
     def show(self):
 
         self.cleanForm()
         self.setupValiables()
-        #self.configureStyles()
         self.generateUI()
         self.addEvents()

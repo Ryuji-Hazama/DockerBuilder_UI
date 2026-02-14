@@ -5,7 +5,10 @@ from .statics import *
 
 __all__ = [
     "KEY_NAME",
+    "KEY_BASE_IMAGE",
     "KEY_VOLUMES",
+    "KEY_CONTEXT_PATH",
+    "KEY_OUTPUT_DIRECTORY",
     "KEY_BUILD",
     "KEY_DELETE",
     "KEY_RELEASE",
@@ -16,8 +19,10 @@ __all__ = [
     "KEY_REF",
     "KEY_COM_SKIP_EXISTING",
     "KEY_COM_BUILD_ALL",
+    "KEY_OP_APPLICATION",
     "KEY_OP_IMAGES",
     "KEY_OP_COMMON",
+    "KEY_OP_PACKAGE",
     "KEY_BUTTON_RUN",
     "KEY_BUTTON_STOP",
     "KEY_BUTTON_BUILD",

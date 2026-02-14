@@ -4,7 +4,7 @@ from ttkbootstrap.dialogs import Messagebox
 import maplex
 
 from statics import *
-from core import *
+from core import TestUp
 
 class testMenu:
 
