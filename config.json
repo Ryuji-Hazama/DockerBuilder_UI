@@ -10,7 +10,7 @@
         "Images": [
             {
                 "Name": "Sample Image",
-                "BaseImage": "sample:latest",
+                "BaseImage": "sample",
                 "Dockerfile": "Dockerfile",
                 "ContextPath": "./sample",
                 "BuildArgs": {
@@ -22,12 +22,21 @@
                     "/data",
                     "/config"
                 ]
+            },
+            {
+                "Name": "Example Image",
+                "BaseImage": "example",
+                "Dockerfile": "Dockerfile",
+                "ContextPath": "./example",
+                "Version": "1.0.0"
             }
         ],
         "BuildSettings": {
             "DeleteExistingImages": true,
             "AutoVersioning": true,
-            "VersionFormat": "major.minor.patch"
+            "VersionFormat": "major.minor.patch",
+            "ComposeFilePath": "./compose.yaml",
+            "ComposeCommand": "docker compose"
         }
     }
 }

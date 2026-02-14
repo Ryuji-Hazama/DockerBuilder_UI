@@ -1,3 +1,10 @@
 build/
 dist/
 logs/
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.spec
