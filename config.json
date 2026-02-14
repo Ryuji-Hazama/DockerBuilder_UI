@@ -1,0 +1,33 @@
+{
+    "MapleLogger": {
+        "ConsoleLogLevel": "DEBUG",
+        "FileLogLevel": "INFO",
+        "MaxLogSize": 3,
+        "WorkingDirectory": "logs",
+        "FileEncoding": "utf-8"
+    },
+    "ApplicationSettings": {
+        "Images": [
+            {
+                "Name": "Sample Image",
+                "BaseImage": "sample:latest",
+                "Dockerfile": "Dockerfile",
+                "ContextPath": "./sample",
+                "BuildArgs": {
+                    "ARG1": "value1",
+                    "ARG2": "value2"
+                },
+                "Version": "1.0.0",
+                "Volumes": [
+                    "/data",
+                    "/config"
+                ]
+            }
+        ],
+        "BuildSettings": {
+            "DeleteExistingImages": true,
+            "AutoVersioning": true,
+            "VersionFormat": "major.minor.patch"
+        }
+    }
+}

@@ -1,0 +1,215 @@
+(11453) 2026-02-14 00:36:21.555 [INFO ] __main__.__init__(11) Initializing Docker Builder App.
+(11453) 2026-02-14 00:36:22.002 [INFO ] __main__.setup_ui(27) Setting up UI elements.
+(11453) 2026-02-14 00:36:22.107 [FATAL] __main__.setup_ui(37) Failed to set up UI elements
+(11453) 2026-02-14 00:36:22.110 [FATAL] __main__.setup_ui(37) 'dockerBuilder' object has no attribute 'build_images'
+(11453) 2026-02-14 00:36:22.116 [FATAL] __main__.setup_ui(37) Traceback (most recent call last):
+  File "/home/ryuji-hazama/Documents/Python/ATC_DockerBuilder/docker_builder.py", line 31, in setup_ui
+    self.generateButtons()
+  File "/home/ryuji-hazama/Documents/Python/ATC_DockerBuilder/docker_builder.py", line 85, in generateButtons
+    build_button = ttk.Button(button_frame, text="Build", command=self.build_images)
+                                                                  ^^^^^^^^^^^^^^^^^
+AttributeError: 'dockerBuilder' object has no attribute 'build_images'
+
+(11453) 2026-02-14 00:36:22.118 [INFO ] __main__.__init__(21) Docker Builder App initialized successfully.
+(11453) 2026-02-14 00:36:22.120 [INFO ] __main__.run(94) Running Docker Builder App.
+(11596) 2026-02-14 00:37:07.041 [INFO ] __main__.__init__(11) Initializing Docker Builder App.
+(11596) 2026-02-14 00:37:07.442 [INFO ] __main__.setup_ui(27) Setting up UI elements.
+(11596) 2026-02-14 00:37:07.536 [INFO ] __main__.setup_ui(33) UI elements set up successfully.
+(11596) 2026-02-14 00:37:07.538 [INFO ] __main__.__init__(21) Docker Builder App initialized successfully.
+(11596) 2026-02-14 00:37:07.540 [INFO ] __main__.run(102) Running Docker Builder App.
+(11839) 2026-02-14 00:39:26.400 [INFO ] __main__.__init__(11) Initializing Docker Builder App.
+(11839) 2026-02-14 00:39:26.802 [INFO ] __main__.setup_ui(27) Setting up UI elements.
+(11839) 2026-02-14 00:39:26.908 [INFO ] __main__.setup_ui(33) UI elements set up successfully.
+(11839) 2026-02-14 00:39:26.910 [INFO ] __main__.__init__(21) Docker Builder App initialized successfully.
+(11839) 2026-02-14 00:39:26.914 [INFO ] __main__.run(117) Running Docker Builder App.
+(11988) 2026-02-14 00:42:57.224 [INFO ] __main__.__init__(11) Initializing Docker Builder App.
+(11988) 2026-02-14 00:42:57.830 [INFO ] __main__.setup_ui(27) Setting up UI elements.
+(11988) 2026-02-14 00:42:57.926 [INFO ] __main__.setup_ui(33) UI elements set up successfully.
+(11988) 2026-02-14 00:42:57.928 [INFO ] __main__.__init__(21) Docker Builder App initialized successfully.
+(11988) 2026-02-14 00:42:57.930 [INFO ] __main__.run(129) Running Docker Builder App.
+(11988) 2026-02-14 00:43:32.199 [INFO ] __main__.quitApp(124) Exiting Docker Builder App.
+(12160) 2026-02-14 00:44:41.601 [INFO ] __main__.__init__(11) Initializing Docker Builder App.
+(12160) 2026-02-14 00:44:42.164 [INFO ] __main__.setup_ui(27) Setting up UI elements.
+(12160) 2026-02-14 00:44:42.271 [INFO ] __main__.setup_ui(33) UI elements set up successfully.
+(12160) 2026-02-14 00:44:42.273 [INFO ] __main__.__init__(21) Docker Builder App initialized successfully.
+(12160) 2026-02-14 00:44:42.275 [INFO ] __main__.run(129) Running Docker Builder App.
+(12160) 2026-02-14 00:44:46.363 [INFO ] __main__.quitApp(124) Exiting Docker Builder App.
+(12295) 2026-02-14 00:45:03.141 [INFO ] __main__.__init__(11) Initializing Docker Builder App.
+(12295) 2026-02-14 00:45:03.530 [INFO ] __main__.setup_ui(27) Setting up UI elements.
+(12295) 2026-02-14 00:45:03.637 [INFO ] __main__.setup_ui(33) UI elements set up successfully.
+(12295) 2026-02-14 00:45:03.641 [INFO ] __main__.__init__(21) Docker Builder App initialized successfully.
+(12295) 2026-02-14 00:45:03.646 [INFO ] __main__.run(129) Running Docker Builder App.
+(12295) 2026-02-14 00:45:10.561 [INFO ] __main__.quitApp(124) Exiting Docker Builder App.
+(12436) 2026-02-14 00:45:26.302 [INFO ] __main__.__init__(11) Initializing Docker Builder App.
+(12436) 2026-02-14 00:45:26.688 [INFO ] __main__.setup_ui(27) Setting up UI elements.
+(12436) 2026-02-14 00:45:26.805 [INFO ] __main__.setup_ui(34) UI elements set up successfully.
+(12436) 2026-02-14 00:45:26.807 [INFO ] __main__.__init__(21) Docker Builder App initialized successfully.
+(12436) 2026-02-14 00:45:26.810 [INFO ] __main__.run(130) Running Docker Builder App.
+(12436) 2026-02-14 00:45:39.567 [INFO ] __main__.quitApp(125) Exiting Docker Builder App.
+(12586) 2026-02-14 00:47:30.331 [INFO ] __main__.__init__(11) Initializing Docker Builder App.
+(12586) 2026-02-14 00:47:30.720 [INFO ] __main__.setup_ui(28) Setting up UI elements.
+(12586) 2026-02-14 00:47:30.828 [INFO ] __main__.setup_ui(35) UI elements set up successfully.
+(12586) 2026-02-14 00:47:30.833 [INFO ] __main__.__init__(22) Docker Builder App initialized successfully.
+(12586) 2026-02-14 00:47:30.836 [INFO ] __main__.run(142) Running Docker Builder App.
+(12586) 2026-02-14 00:47:35.166 [INFO ] __main__.on_radio_change(48) Build option changed to: Selected
+(12586) 2026-02-14 00:47:37.873 [INFO ] __main__.on_radio_change(48) Build option changed to: All
+(12586) 2026-02-14 00:47:40.933 [INFO ] __main__.quitApp(137) Exiting Docker Builder App.
+(12750) 2026-02-14 00:49:44.070 [INFO ] __main__.__init__(11) Initializing Docker Builder App.
+(12750) 2026-02-14 00:49:44.459 [INFO ] __main__.setup_ui(28) Setting up UI elements.
+(12750) 2026-02-14 00:49:44.573 [INFO ] __main__.setup_ui(35) UI elements set up successfully.
+(12750) 2026-02-14 00:49:44.577 [INFO ] __main__.__init__(22) Docker Builder App initialized successfully.
+(12750) 2026-02-14 00:49:44.580 [INFO ] __main__.run(149) Running Docker Builder App.
+(12750) 2026-02-14 00:49:55.703 [INFO ] __main__.quitApp(144) Exiting Docker Builder App.
+(12904) 2026-02-14 00:51:40.586 [INFO ] __main__.__init__(11) Initializing Docker Builder App.
+(12904) 2026-02-14 00:51:40.971 [INFO ] __main__.setup_ui(28) Setting up UI elements.
+(12904) 2026-02-14 00:51:41.082 [INFO ] __main__.setup_ui(35) UI elements set up successfully.
+(12904) 2026-02-14 00:51:41.089 [INFO ] __main__.__init__(22) Docker Builder App initialized successfully.
+(12904) 2026-02-14 00:51:41.091 [INFO ] __main__.run(150) Running Docker Builder App.
+(12904) 2026-02-14 00:52:06.385 [INFO ] __main__.quitApp(145) Exiting Docker Builder App.
+(13132) 2026-02-14 00:57:29.313 [INFO ] __main__.__init__(11) Initializing Docker Builder App.
+(13132) 2026-02-14 00:57:29.713 [INFO ] __main__.setup_ui(28) Setting up UI elements.
+(13132) 2026-02-14 00:57:29.823 [FATAL] __main__.setup_ui(39) Failed to set up UI elements
+(13132) 2026-02-14 00:57:29.825 [FATAL] __main__.setup_ui(39) 'Checkbutton' object has no attribute 'variable'
+(13132) 2026-02-14 00:57:29.834 [FATAL] __main__.setup_ui(39) Traceback (most recent call last):
+  File "/home/ryuji-hazama/Documents/Python/ATC_DockerBuilder/docker_builder.py", line 31, in setup_ui
+    self.generateForm()
+  File "/home/ryuji-hazama/Documents/Python/ATC_DockerBuilder/docker_builder.py", line 96, in generateForm
+    "Image 1": self.imageCheckButton1.variable,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Checkbutton' object has no attribute 'variable'
+
+(13132) 2026-02-14 00:57:29.838 [INFO ] __main__.__init__(22) Docker Builder App initialized successfully.
+(13132) 2026-02-14 00:57:29.842 [INFO ] __main__.run(157) Running Docker Builder App.
+(13311) 2026-02-14 00:59:44.573 [INFO ] __main__.__init__(11) Initializing Docker Builder App.
+(13311) 2026-02-14 00:59:44.968 [INFO ] __main__.setup_ui(28) Setting up UI elements.
+(13311) 2026-02-14 00:59:45.080 [INFO ] __main__.setup_ui(35) UI elements set up successfully.
+(13311) 2026-02-14 00:59:45.085 [INFO ] __main__.__init__(22) Docker Builder App initialized successfully.
+(13311) 2026-02-14 00:59:45.087 [INFO ] __main__.run(157) Running Docker Builder App.
+(13311) 2026-02-14 00:59:59.784 [INFO ] __main__.quitApp(152) Exiting Docker Builder App.
+(13484) 2026-02-14 01:01:49.055 [INFO ] __main__.__init__(11) Initializing Docker Builder App.
+(13484) 2026-02-14 01:01:49.465 [INFO ] __main__.setup_ui(28) Setting up UI elements.
+(13484) 2026-02-14 01:01:49.575 [INFO ] __main__.setup_ui(35) UI elements set up successfully.
+(13484) 2026-02-14 01:01:49.579 [INFO ] __main__.__init__(22) Docker Builder App initialized successfully.
+(13484) 2026-02-14 01:01:49.582 [INFO ] __main__.run(157) Running Docker Builder App.
+(13484) 2026-02-14 01:02:02.020 [INFO ] __main__.quitApp(152) Exiting Docker Builder App.
+(13642) 2026-02-14 01:03:41.669 [INFO ] __main__.__init__(11) Initializing Docker Builder App.
+(13642) 2026-02-14 01:03:42.061 [INFO ] __main__.setup_ui(28) Setting up UI elements.
+(13642) 2026-02-14 01:03:42.176 [INFO ] __main__.setup_ui(35) UI elements set up successfully.
+(13642) 2026-02-14 01:03:42.180 [INFO ] __main__.__init__(22) Docker Builder App initialized successfully.
+(13642) 2026-02-14 01:03:42.183 [INFO ] __main__.run(161) Running Docker Builder App.
+(13642) 2026-02-14 01:03:52.637 [INFO ] __main__.quitApp(156) Exiting Docker Builder App.
+(14700) 2026-02-14 01:26:59.654 [INFO ] __main__.__init__(13) Initializing Docker Builder App.
+(14700) 2026-02-14 01:27:00.063 [INFO ] __main__.setup_ui(30) Setting up UI elements.
+(14700) 2026-02-14 01:27:00.182 [INFO ] __main__.setup_ui(37) UI elements set up successfully.
+(14700) 2026-02-14 01:27:00.190 [INFO ] __main__.__init__(24) Docker Builder App initialized successfully.
+(14700) 2026-02-14 01:27:06.967 [ERROR] __main__.checkRoot(167) Application not run as root. Exiting.
+(17275) 2026-02-14 01:36:44.769 [INFO ] __main__.__init__(15) Initializing Docker Builder App.
+(17275) 2026-02-14 01:36:45.172 [INFO ] __main__.setup_ui(32) Setting up UI elements.
+(17275) 2026-02-14 01:36:45.303 [INFO ] __main__.setup_ui(39) UI elements set up successfully.
+(17275) 2026-02-14 01:36:45.304 [INFO ] __main__.__init__(26) Docker Builder App initialized successfully.
+(17275) 2026-02-14 01:37:06.198 [ERROR] __main__.checkRoot(169) Application not run as root. Exiting.
+(17301) 2026-02-14 01:37:12.782 [INFO ] __main__.__init__(15) Initializing Docker Builder App.
+(17301) 2026-02-14 01:37:12.886 [INFO ] __main__.setup_ui(32) Setting up UI elements.
+(17301) 2026-02-14 01:37:12.988 [INFO ] __main__.setup_ui(39) UI elements set up successfully.
+(17301) 2026-02-14 01:37:12.990 [INFO ] __main__.__init__(26) Docker Builder App initialized successfully.
+(17301) 2026-02-14 01:37:12.993 [INFO ] __main__.run(176) Running Docker Builder App.
+(17301) 2026-02-14 01:37:53.311 [INFO ] __main__.quitApp(160) Exiting Docker Builder App.
+(14141) 2026-02-14 09:54:58.887 [INFO ] __main__.__init__(16) Initializing Docker Builder App.
+(14296) 2026-02-14 09:56:11.849 [INFO ] __main__.__init__(16) Initializing Docker Builder App.
+(14468) 2026-02-14 09:58:32.384 [INFO ] __main__.__init__(16) Initializing Docker Builder App.
+(14468) 2026-02-14 09:58:32.800 [INFO ] __main__.setup_ui(59) Setting up UI elements.
+(14468) 2026-02-14 09:58:32.934 [INFO ] __main__.setup_ui(66) UI elements set up successfully.
+(14468) 2026-02-14 09:58:32.939 [INFO ] __main__.__init__(33) Docker Builder App initialized successfully.
+(14468) 2026-02-14 09:58:39.465 [FATAL] __main__.checkRoot(207) Application not run as root. Exiting.
+(14632) 2026-02-14 09:59:03.938 [INFO ] __main__.__init__(16) Initializing Docker Builder App.
+(14632) 2026-02-14 09:59:04.347 [INFO ] __main__.setup_ui(59) Setting up UI elements.
+(14632) 2026-02-14 09:59:04.467 [INFO ] __main__.setup_ui(66) UI elements set up successfully.
+(14632) 2026-02-14 09:59:04.473 [INFO ] __main__.__init__(33) Docker Builder App initialized successfully.
+(14632) 2026-02-14 09:59:06.616 [FATAL] __main__.checkRoot(207) Application not run as root. Exiting.
+(14632) 2026-02-14 09:59:06.622 [WARN ] __main__.checkRoot(210) Continuing without root privileges for development purposes.
+(14632) 2026-02-14 09:59:06.629 [INFO ] __main__.checkDocker(216) Checking for Docker installation.
+(14632) 2026-02-14 09:59:06.634 [INFO ] __main__.checkDocker(224) Docker installation found.
+(14632) 2026-02-14 09:59:06.641 [INFO ] __main__.run(229) Running Docker Builder App.
+(14632) 2026-02-14 09:59:24.350 [INFO ] __main__.quitApp(187) Exiting Docker Builder App.
+(14806) 2026-02-14 10:00:27.674 [INFO ] __main__.__init__(16) Initializing Docker Builder App.
+(14806) 2026-02-14 10:00:28.078 [INFO ] __main__.setup_ui(59) Setting up UI elements.
+(14806) 2026-02-14 10:00:28.197 [INFO ] __main__.setup_ui(66) UI elements set up successfully.
+(14806) 2026-02-14 10:00:28.203 [INFO ] __main__.__init__(33) Docker Builder App initialized successfully.
+(14806) 2026-02-14 10:00:31.948 [FATAL] __main__.checkRoot(207) Application not run as root. Exiting.
+(14806) 2026-02-14 10:00:31.973 [WARN ] __main__.checkRoot(210) Continuing without root privileges for development purposes.
+(14806) 2026-02-14 10:00:31.986 [INFO ] __main__.checkDocker(216) Checking for Docker installation.
+(14806) 2026-02-14 10:00:31.994 [INFO ] __main__.checkDocker(224) Docker installation found.
+(14806) 2026-02-14 10:00:31.998 [INFO ] __main__.run(229) Running Docker Builder App.
+(14806) 2026-02-14 10:00:46.056 [INFO ] __main__.quitApp(187) Exiting Docker Builder App.
+(14993) 2026-02-14 10:02:20.149 [INFO ] __main__.__init__(16) Initializing Docker Builder App.
+(14993) 2026-02-14 10:02:20.551 [INFO ] __main__.setup_ui(40) Setting up UI elements.
+(14993) 2026-02-14 10:02:20.664 [INFO ] __main__.setup_ui(47) UI elements set up successfully.
+(14993) 2026-02-14 10:02:20.672 [INFO ] __main__.__init__(34) Docker Builder App initialized successfully.
+(14993) 2026-02-14 10:02:23.528 [FATAL] __main__.checkRoot(188) Application not run as root. Exiting.
+(15120) 2026-02-14 10:03:10.483 [INFO ] __main__.__init__(16) Initializing Docker Builder App.
+(15120) 2026-02-14 10:03:10.917 [INFO ] __main__.setup_ui(40) Setting up UI elements.
+(15120) 2026-02-14 10:03:11.038 [INFO ] __main__.setup_ui(47) UI elements set up successfully.
+(15120) 2026-02-14 10:03:11.044 [INFO ] __main__.__init__(34) Docker Builder App initialized successfully.
+(15120) 2026-02-14 10:03:11.047 [INFO ] __main__.checkDocker(196) Checking for Docker installation.
+(15120) 2026-02-14 10:03:11.051 [INFO ] __main__.checkDocker(204) Docker installation found.
+(15120) 2026-02-14 10:03:11.054 [INFO ] __main__.run(209) Running Docker Builder App.
+(15120) 2026-02-14 10:03:19.222 [INFO ] __main__.quitApp(168) Exiting Docker Builder App.
+(15602) 2026-02-14 10:13:52.865 [INFO ] __main__.__init__(16) Initializing Docker Builder App.
+(15602) 2026-02-14 10:13:53.263 [INFO ] __main__.setup_ui(51) Setting up UI elements.
+(15602) 2026-02-14 10:13:53.377 [INFO ] __main__.setup_ui(57) UI elements set up successfully.
+(15602) 2026-02-14 10:13:53.383 [INFO ] __main__.__init__(34) Docker Builder App initialized successfully.
+(15602) 2026-02-14 10:13:53.386 [INFO ] __main__.checkDocker(218) Checking for Docker installation.
+(15602) 2026-02-14 10:13:53.389 [INFO ] __main__.checkDocker(226) Docker installation found.
+(15602) 2026-02-14 10:13:53.393 [INFO ] __main__.run(231) Running Docker Builder App.
+(15602) 2026-02-14 10:14:04.432 [INFO ] __main__.quitApp(190) Exiting Docker Builder App.
+(15969) 2026-02-14 10:29:32.917 [INFO ] __main__.__init__(22) Initializing Docker Builder App.
+(15969) 2026-02-14 10:29:33.320 [INFO ] __main__.setup_ui(61) Setting up UI elements.
+(15969) 2026-02-14 10:29:33.430 [INFO ] __main__.setup_ui(67) UI elements set up successfully.
+(15969) 2026-02-14 10:29:33.435 [INFO ] __main__.__init__(40) Docker Builder App initialized successfully.
+(15969) 2026-02-14 10:29:33.438 [INFO ] __main__.checkDocker(220) Checking for Docker installation.
+(15969) 2026-02-14 10:29:33.442 [INFO ] __main__.checkDocker(228) Docker installation found.
+(15969) 2026-02-14 10:29:33.445 [INFO ] __main__.run(233) Running Docker Builder App.
+(15969) 2026-02-14 10:29:45.301 [INFO ] __main__.quitApp(192) Exiting Docker Builder App.
+(16132) 2026-02-14 10:30:04.720 [INFO ] __main__.__init__(22) Initializing Docker Builder App.
+(16132) 2026-02-14 10:30:05.117 [INFO ] __main__.setup_ui(61) Setting up UI elements.
+(16132) 2026-02-14 10:30:05.226 [INFO ] __main__.setup_ui(67) UI elements set up successfully.
+(16132) 2026-02-14 10:30:05.231 [INFO ] __main__.__init__(40) Docker Builder App initialized successfully.
+(16132) 2026-02-14 10:30:05.234 [INFO ] __main__.checkDocker(220) Checking for Docker installation.
+(16132) 2026-02-14 10:30:05.237 [INFO ] __main__.checkDocker(228) Docker installation found.
+(16132) 2026-02-14 10:30:05.241 [INFO ] __main__.run(233) Running Docker Builder App.
+(16132) 2026-02-14 10:30:14.503 [INFO ] __main__.quitApp(192) Exiting Docker Builder App.
+(16387) 2026-02-14 10:36:23.857 [INFO ] __main__.__init__(24) Initializing Docker Builder App.
+(16387) 2026-02-14 10:36:24.253 [INFO ] __main__.setup_ui(67) Setting up UI elements.
+(16387) 2026-02-14 10:36:24.361 [INFO ] __main__.setup_ui(73) UI elements set up successfully.
+(16387) 2026-02-14 10:36:24.367 [INFO ] __main__.__init__(42) Docker Builder App initialized successfully.
+(16387) 2026-02-14 10:36:24.369 [INFO ] __main__.checkDocker(239) Checking for Docker installation.
+(16387) 2026-02-14 10:36:24.372 [INFO ] __main__.checkDocker(247) Docker installation found.
+(16387) 2026-02-14 10:36:24.374 [INFO ] __main__.run(252) Running Docker Builder App.
+(16387) 2026-02-14 10:36:41.628 [INFO ] __main__.quitApp(211) Exiting Docker Builder App.
+(16580) 2026-02-14 10:37:59.956 [INFO ] __main__.__init__(24) Initializing Docker Builder App.
+(16580) 2026-02-14 10:38:00.356 [INFO ] __main__.setup_ui(67) Setting up UI elements.
+(16580) 2026-02-14 10:38:00.469 [INFO ] __main__.setup_ui(73) UI elements set up successfully.
+(16580) 2026-02-14 10:38:00.474 [INFO ] __main__.__init__(42) Docker Builder App initialized successfully.
+(16580) 2026-02-14 10:38:00.478 [INFO ] __main__.checkDocker(239) Checking for Docker installation.
+(16580) 2026-02-14 10:38:00.480 [INFO ] __main__.checkDocker(247) Docker installation found.
+(16580) 2026-02-14 10:38:00.483 [INFO ] __main__.run(252) Running Docker Builder App.
+(16580) 2026-02-14 10:38:12.397 [INFO ] __main__.quitApp(211) Exiting Docker Builder App.
+(16755) 2026-02-14 10:39:56.370 [INFO ] __main__.__init__(24) Initializing Docker Builder App.
+(16755) 2026-02-14 10:39:56.798 [INFO ] __main__.setup_ui(67) Setting up UI elements.
+(16755) 2026-02-14 10:39:57.037 [INFO ] __main__.setup_ui(73) UI elements set up successfully.
+(16755) 2026-02-14 10:39:57.043 [INFO ] __main__.__init__(42) Docker Builder App initialized successfully.
+(16755) 2026-02-14 10:39:57.046 [INFO ] __main__.checkDocker(241) Checking for Docker installation.
+(16755) 2026-02-14 10:39:57.049 [INFO ] __main__.checkDocker(249) Docker installation found.
+(16755) 2026-02-14 10:39:57.052 [INFO ] __main__.run(254) Running Docker Builder App.
+(16755) 2026-02-14 10:40:01.491 [INFO ] __main__.build_images(203) Build button clicked. Starting build process.
+(16755) 2026-02-14 10:40:24.401 [INFO ] __main__.quitApp(213) Exiting Docker Builder App.
+(17145) 2026-02-14 10:56:02.821 [INFO ] __main__.__init__(30) Initializing Docker Builder App.
+(17145) 2026-02-14 10:56:03.217 [INFO ] __main__.setup_ui(75) Setting up UI elements.
+(17145) 2026-02-14 10:56:03.331 [INFO ] __main__.setup_ui(81) UI elements set up successfully.
+(17145) 2026-02-14 10:56:03.335 [INFO ] __main__.__init__(48) Docker Builder App initialized successfully.
+(17145) 2026-02-14 10:56:03.339 [INFO ] __main__.checkDocker(290) Checking for Docker installation.
+(17145) 2026-02-14 10:56:03.342 [INFO ] __main__.checkDocker(298) Docker installation found.
+(17145) 2026-02-14 10:56:03.345 [INFO ] __main__.run(303) Running Docker Builder App.
+(17145) 2026-02-14 10:56:14.163 [INFO ] __main__.build_images(229) Build button clicked. Starting build process.
+(17145) 2026-02-14 10:56:24.292 [INFO ] __main__.build_images(229) Build button clicked. Starting build process.
+(17145) 2026-02-14 10:56:28.901 [INFO ] __main__.quitApp(262) Exiting Docker Builder App.

@@ -1,0 +1,23 @@
+(16285) 2026-02-14 01:31:27.370 [INFO ] __main__.__init__(13) Initializing Docker Builder App.
+(16285) 2026-02-14 01:31:27.771 [INFO ] __main__.setup_ui(30) Setting up UI elements.
+(16285) 2026-02-14 01:31:27.840 [FATAL] __main__.setup_ui(41) Failed to set up UI elements
+(16285) 2026-02-14 01:31:27.841 [FATAL] __main__.setup_ui(41) No module named 'PIL._tkinter_finder'
+(16285) 2026-02-14 01:31:27.845 [FATAL] __main__.setup_ui(41) Traceback (most recent call last):
+  File "PIL/ImageTk.py", line 59, in _pyimagingtkcall
+_tkinter.TclError: invalid command name "PyImagingPhoto"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "docker_builder.py", line 33, in setup_ui
+  File "docker_builder.py", line 82, in generateForm
+  File "ttkbootstrap/style.py", line 5307, in __init__
+  File "ttkbootstrap/style.py", line 5397, in update_ttk_widget_style
+  File "ttkbootstrap/style.py", line 3894, in create_radiobutton_style
+  File "ttkbootstrap/style.py", line 3832, in create_radiobutton_assets
+  File "PIL/ImageTk.py", line 132, in __init__
+  File "PIL/ImageTk.py", line 188, in paste
+  File "PIL/ImageTk.py", line 63, in _pyimagingtkcall
+ModuleNotFoundError: No module named 'PIL._tkinter_finder'
+
+(16285) 2026-02-14 01:31:27.846 [INFO ] __main__.__init__(24) Docker Builder App initialized successfully.
