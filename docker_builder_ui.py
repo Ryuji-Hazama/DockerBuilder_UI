@@ -9,7 +9,7 @@ import shutil
 import PIL._tkinter_finder
 
 from statics import *
-from ui import *
+from ui.menu import *
 
 class dockerBuilder:
 
@@ -21,7 +21,7 @@ class dockerBuilder:
 
         # Main window setup
         self.root = ttk.Window("Docker Builder", "superhero")
-        self.root.geometry("800x400")
+        self.root.geometry("800x500")
         self.root.resizable(True, True)
         self.root.attributes("-zoomed", True)  # Start maximized
 
@@ -141,10 +141,10 @@ class dockerBuilder:
         if os.geteuid() != 0:
 
             # Show error dialog
-            #Messagebox.show_error("This application must be run as root.", title="Permission Error")
-            #self.logger.fatal("Application not run as root. Exiting.")
-            #return False
-            pass    # For development purposes, we will allow non-root execution. Remove this pass and uncomment the above lines for production.
+            Messagebox.show_error("This application must be run as root.", title="Permission Error")
+            self.logger.fatal("Application not run as root. Exiting.")
+            return False
+            #pass    # For development purposes, we will allow non-root execution. Remove this pass and uncomment the above lines for production.
         
         return True
 

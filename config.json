@@ -39,7 +39,11 @@
             "ComposeCommand": "docker compose"
         },
         "PackageSettings": {
-            "OutputDirectory": "./packages"
+            "OutputDirectory": "./packages",
+            "Ownership": {
+                "User": "exampleuser",
+                "Group": "examplegroup"
+            }
         }
     }
 }

@@ -20,8 +20,7 @@ class buildMenu:
         # Load configuration
 
         self.configFile = maplex.MapleJson("config.json")
-        self.config = self.configFile.read("ApplicationSettings")
-        self.imageList = self.config.get("Images", [])
+        self.readConfig()
 
         self.root = root
         self.buildInstance = None
@@ -257,11 +256,18 @@ class buildMenu:
 
         self.buildAllSelected = self.options[KEY_OP_COMMON][KEY_COM_BUILD_ALL]
 
+    def readConfig(self):
+
+        self.config = self.configFile.read(KEY_OP_APPLICATION)
+        self.imageList = self.config.get(KEY_OP_IMAGES, [])
+
     def onBuildClick(self):
 
         self.gatherOptions()
         self.getBuildInstance()
         self.buildInstance.startBuild()
+        self.readConfig()
+        self.show()
 
     def show(self):
 
